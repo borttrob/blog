@@ -7,6 +7,8 @@
 module.exports = {
   siteName: 'Bort\'s Blog',
   siteDescription: 'Just a simple collection of stuff I work on',
+  siteUrl: 'https://borttrob.github.io',
+  pathPrefix: '/blog',
 
   templates: {
     Post: '/:title',
