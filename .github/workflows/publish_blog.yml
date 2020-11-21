@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install gridsome cli
-        run: npm install --global @gridsome/cli
+        run: sudo npm install --global @gridsome/cli
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
