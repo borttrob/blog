@@ -8,13 +8,13 @@
 		</h1>
 
 		<p class="author__intro">
-      A collection of stuff
+      This is a collection of stuff I work on
 		</p>
 
-		<p class="author__links">
-			<a href="//twitter.com/gridsome">Follow on Twitter</a>
-			<a href="//github.com/gridsome/gridsome-starter-blog">GitHub</a>
-		</p>
+<!--		<p class="author__links">-->
+<!--			<a href="//twitter.com/gridsome">Follow on Twitter</a>-->
+<!--			<a href="//github.com/gridsome/gridsome-starter-blog">GitHub</a>-->
+<!--		</p>-->
 
 	</div>
 </template>
