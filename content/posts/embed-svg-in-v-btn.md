@@ -1,7 +1,7 @@
 ---
 title: How to embed a SVG in vuetify's v-btn?
 date: 2020-11-21
-published: true
+published: false
 tags: ['Vuetify','Vue', 'SVG']
 canonical_url: false
 description: ""
@@ -11,7 +11,7 @@ Recently I stumbled into an a problem I didn't really expect. I needed to embed 
 
 Our example SVG will be this circle.
 
-  <img align="center">
+  <img>
 
 <svg height="200">    
   <circle cx="100" cy="100" r="99" stroke="black" stroke-width="1" fill="red" />  
@@ -21,7 +21,9 @@ Our example SVG will be this circle.
 
 And the result should look like this.
 
-<img src="embed-svg-in-v-btn/FinalResult.png" align="left">
+<img src="./embed-svg-in-v-btn/FinalResult.png" align="left" />
+
+![w200](./embed-svg-in-v-btn/FinalResult.png)
 
 ### Naive approach
 
@@ -47,7 +49,7 @@ My first approach was the way I imagined it should work.
 
 The result looks as follows
 
-. <img src="embed-svg-in-v-btn/NaiveApproach.png" align="left" height=100>
+. <img src="./embed-svg-in-v-btn/NaiveApproach.png" align="left" height=100>
 
 
 
