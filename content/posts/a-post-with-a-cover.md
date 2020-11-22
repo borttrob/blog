@@ -1,4 +1,4 @@
-d---
+---
 title: A post with a cover image
 date: 2019-01-07
 published: false
