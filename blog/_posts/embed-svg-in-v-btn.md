@@ -7,7 +7,7 @@ canonical_url: false
 description: ""
 ---
 
-Recently I stumbled into a problem I didn't really expect. I needed to embed an SVG into Vuetify's `v-btn` as. This **has** to be a simple task, right?
+Recently I stumbled into a problem I didn't really expect. I needed to embed an SVG into Vuetify's `v-btn`. This **has** to be a simple task, right?
 
 Our example SVG will be this circle.
 
