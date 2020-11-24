@@ -1,13 +1,13 @@
 ---
 title: How to embed a SVG in vuetify's v-btn?
 date: 2020-11-21
-published: false
+published: true
 tags: ['Vuetify','Vue', 'SVG']
 canonical_url: false
 description: ""
 ---
 
-Recently I stumbled into an a problem I didn't really expect. I needed to embed an SVG into Vuetify's `v-btn` as. This **has** to be a simple task, right?
+Recently I stumbled into a problem I didn't really expect. I needed to embed an SVG into Vuetify's `v-btn` as. This **has** to be a simple task, right?
 
 Our example SVG will be this circle.
 
@@ -21,9 +21,7 @@ Our example SVG will be this circle.
 
 And the result should look like this.
 
-<img src="./embed-svg-in-v-btn/FinalResult.png" align="left" />
-
-![w200](./embed-svg-in-v-btn/FinalResult.png)
+<img src="./embed-svg-in-v-btn/FinalResult.png" align="middle" height=80>
 
 ### Naive approach
 
@@ -49,13 +47,9 @@ My first approach was the way I imagined it should work.
 
 The result looks as follows
 
-. <img src="./embed-svg-in-v-btn/NaiveApproach.png" align="left" height=100>
+<img src="./embed-svg-in-v-btn/NaiveApproach.png" align="middle" height=80>
 
-
-
-
-
-The natural reflex is to manupulate the **height and width parameters**, but this doesn't work as imagined and produces similar results.
+The natural reflex is to manupulate the **height and width parameters**, but this doesn't have the desired effect.
 
 ### Slightly less naive approach
 
@@ -81,25 +75,23 @@ The natural reflex is to manupulate the **height and width parameters**, but thi
 
 But this produces just an empty button like this.
 
-<img src="embed-svg-in-v-btn/NaiveApproach2.png" align="left" height=100>
+<img src="./embed-svg-in-v-btn/NaiveApproach2.png" align="middle" height=100>
 
-No icon at all! Seemed I had to dig deeper for this *simple* task.
+Obviously I had to dig deeper for this *simple* task &#128533;.
 
 
 
-### *This is the way* approach
+### "This is the way" approach
 
-Turned out there were multiple problems at play at the same time. 
+Turned out there were multiple problems at play. 
 
-**First** I screwed up the creation of `v-icon`. [The whole soluton is described here by @BeHappy](https://stackoverflow.com/questions/64934008/cant-display-svg-in-v-icon) . But summarised one has to do the following.
+**First** I screwed up the creation of `v-icon`. [The whole soluton is described here by @BeHappy](https://stackoverflow.com/questions/64934008/cant-display-svg-in-v-icon). But summarised one has to do the following.
 
-1. Create a template with the svg data
+1. Create a template for the SVG
 2. Register the template as Icon in the vuetify configuration
 3. Use reference to the registered template in`v-icon`
 
- 
-
-**Second** one has to scale the SVG. Turns out SVG scaling works totally different than normal `img`scaling. One hast to use the `viewBox` attribute.  [A great interactive tutorial that describes the logic behind the viewBox attribute can be found here](https://wattenberger.com/guide/scaling-svg). 
+**Second** one has to scale the SVG. Turns out SVG scaling works totally different than normal `img`scaling. One hast to use the `viewBox` attribute instead of *height* and *width* parameters.  [This great interactive tutorial describes the logic behind the viewBox attribute](https://wattenberger.com/guide/scaling-svg). 
 
 Plugging it all together we get: 
 
@@ -124,7 +116,7 @@ Plugging it all together we get:
 </template>
 ```
 
-Pay attention to the **height** and **width** (3rd and 4th) values of the of the `viewBox`atteibute. These have to be larger or equal to the internal height and width of the SVG to make the whole SVG visible. As described in the link above, these parameters have nothing to do with the size of the rendered image.
+Pay attention to the **height** and **width** (3rd and 4th) values of the of the `viewBox`attrebute. These have to be **larger or equal** to the internal height and width of the SVG object to make the whole of the SVG visible. As described in the interactive guide I linked below, these parameters have nothing to do with the size of the rendered image.
 
 
 
@@ -132,7 +124,7 @@ Pay attention to the **height** and **width** (3rd and 4th) values of the of the
 
 *src/plugins/vuetify.json* 
 
-```html
+```javascript
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import MySvgIcon from "@/components/MySvgIcon";
@@ -152,7 +144,7 @@ export default new Vuetify({
 
 
 
-3. **Use reference to the registered template in`v-icon`**
+3. **Use reference to the template in`v-icon`**
 
 *App.vue*
 
@@ -187,9 +179,9 @@ The whole example can be found [here on Github](https://github.com/borttrob/embe
 
 ### References 
 
-Full example Github: https://github.com/borttrob/embed-svg-in-v-icon.git
+[Full example on Github](https://github.com/borttrob/embed-svg-in-v-icon.git)
 
-Great interactive tutorial for `viewBox` attribute https://wattenberger.com/guide/scaling-svg
+[Great interactive tutorial for `viewBox` attribute](https://wattenberger.com/guide/scaling-svg)
 
-Usage of `v-icon`in `v-btn` https://stackoverflow.com/questions/64934008/cant-display-svg-in-v-icon
+[Usage of `v-icon`in `v-btn`](https://stackoverflow.com/questions/64934008/cant-display-svg-in-v-icon)
 
