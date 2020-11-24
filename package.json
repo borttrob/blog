@@ -1,10 +1,10 @@
 {
   "name": "vuepress-blog-template",
   "version": "0.0.1",
-  "description": "A blog powered by VuePress",
+  "description": "bort's blog",
   "authors": {
-    "name": "Billyyyyy3320",
-    "email": "newsbielt703@gmail.com"
+    "name": "Boris Terentiev",
+    "email": ""
   },
   "scripts": {
     "dev": "vuepress dev blog",

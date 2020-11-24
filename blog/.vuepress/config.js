@@ -152,4 +152,5 @@ module.exports = {
 
     // smoothScroll: true
   },
+  base: '/blog/'
 }
