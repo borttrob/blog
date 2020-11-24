@@ -53,7 +53,7 @@ The natural reflex is to manupulate the **height and width parameters**, but thi
 
 ### Slightly less naive approach
 
-[The vuetify documentation tells you](https://vuetifyjs.com/en/components/buttons/) that the svg has to be embedded in a v-icon **link hinzufügen**. So I changed listing 1 to 
+[The vuetify documentation tells you](https://vuetifyjs.com/en/components/buttons/) that the svg has to be embedded in a `v-icon`. So I changed the previous listing to 
 
 ```html
 <!-- Doesn't work -->
