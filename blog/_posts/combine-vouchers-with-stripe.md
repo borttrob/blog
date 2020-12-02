@@ -1,6 +1,6 @@
 ---
 title: Using vouchers with Stripe payment.
-date: 2020-11-30
+date: 2020-12-02
 published: true
 tags: ['Stripe','Voucher']
 canonical_url: false
