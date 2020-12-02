@@ -1,5 +1,5 @@
 ---
-title: Using vouchers with Stripe payment.
+title: Using vouchers with Stripe
 date: 2020-12-02
 published: true
 tags: ['Stripe','Voucher']
