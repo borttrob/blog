@@ -1,5 +1,5 @@
 ---
-title: Adding vouchers to stripe payment.
+title: Using vouchers with Stripe payment.
 date: 2020-11-30
 published: true
 tags: ['Stripe','Voucher']
