@@ -7,7 +7,7 @@ canonical_url: false
 description: ""
 ---
 
-An obvious requirement for a payment/checkout system is to accept **vouchers**, i.e. codes that can be entered during checkout and lead to a price reduction. Introducing such a system means that you suddenly have **two payment services** where each has to confirm it's part of the payment. E.g. 30€ paid by voucher credit and 20€ paid by credit card. A natural requirement is that the payment process must be transactional, i.e. if the voucher service or credit card service rejects the payment, both *payments* must be rolled back. Let's explore how you can implement such a system with [Stripe](https://stripe.com).
+An obvious requirement for a payment/checkout system is to accept **vouchers**, i.e. codes that can be entered during checkout and lead to a price reduction. Introducing such a system means that you suddenly have **two payment services** where each has to confirm it's part of the payment. E.g. 30€ paid by voucher credit and 20€ paid by credit card. A natural requirement is that the payment process must be transactional, i.e. if the voucher service or credit card service rejects the payment, both payments must be rolled back. Let's explore how you can implement such a system with [Stripe](https://stripe.com).
 
 [Stripe](https://stripe.com) is one of the most widely used Payment Gateways, but since you came here voluntarily you know this already. In a just world Stripe would provide a native voucher system and therefore the pains of synchronizing voucher and card payment would be hidden from us poor developers. But unfortunately Stripe doesn't have a native voucher system. Therefore we have to implement a synchronisation wrapper on our own.
 
