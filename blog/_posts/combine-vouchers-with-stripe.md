@@ -49,7 +49,7 @@ Unfortunately stripe doesn't refund its transaction fees if you roll back a paym
 
 Again, a single checkout solution, like a "shopping cart" would mitigate this drawback. In our case we wanted our checkout process as lightweight as possible to increase conversion. Therefore, we decided against a shopping cart.
 
-### 3. Redeem voucher and perform Stripe payment in parallel.
+#### 3. Redeem voucher and perform Stripe payment in parallel.
 
 This option combines the drawbacks of the previous options. Therefore, I won't discuss it further.
 
