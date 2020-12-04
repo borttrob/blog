@@ -185,3 +185,4 @@ The whole example can be found [here on Github](https://github.com/borttrob/embe
 
 [Usage of `v-icon` in `v-btn`](https://stackoverflow.com/questions/64934008/cant-display-svg-in-v-icon)
 
+<Disqus/>
