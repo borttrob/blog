@@ -1,6 +1,9 @@
 module.exports = {
   title: 'bort\'s blog',
   description: 'A blog powered by VuePress',
+  plugins: {
+    'disqus': { shortname: 'bortblog' }
+  },
   theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
   themeConfig: {
     /**

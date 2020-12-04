@@ -65,3 +65,5 @@ All in all until Stripe implements their own voucher system, a silver bullet sol
 
 [Stripe coupon system](https://stripe.com/docs/payments/checkout/discounts)
 
+<Disqus/>
+
