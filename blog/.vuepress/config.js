@@ -5,9 +5,6 @@ module.exports = {
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicons/favicon-32x32.png"}],
     ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicons/favicon-16x16.png"}],
   ],
-  plugins: {
-    'disqus': { shortname: 'bortblog' }
-  },
   theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
   themeConfig: {
     /**
@@ -108,10 +105,10 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#comment
      */
 
-    // comment: {
-    //   service: 'disqus',
-    //   shortname: 'vuepress-plugin-blog',
-    // },
+    comment: {
+      service: 'disqus',
+      shortname: 'bortblog',
+    },
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#newsletter
