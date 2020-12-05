@@ -97,9 +97,9 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#sitemap
      */
 
-    // sitemap: {
-    //   hostname: 'https://example.vuepress-theme-blog.ulivz.com/'
-    // },
+    sitemap: {
+      hostname: 'https://borttrob.github.io/blog/'
+    },
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#comment
