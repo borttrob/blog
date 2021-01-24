@@ -9,7 +9,7 @@ description: "Summary of Chapter 3 from Reinforcement Learning: An Introduction"
 
 Currently I am working through the book [Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto](http://incompleteideas.net/book/RLbook2020.pdf). To engage with the material more thoroughly  I  decided to summarise the content in a series of blog posts. The book is available [here](http://incompleteideas.net/book/RLbook2020.pdf) free of cost (A huge Thank You to Mr. Sutton and Barto for this). I am reading the 2018 version of the book. This post is about chapter 3. 
 
-## What problems do we want to Solve?
+## What problem do we want to Solve?
 
 Reinforcement Learning is about solving the task of optimal control. More specifically it is a set of solution methods for problems that are formulated as Markov Decision Processes (MDPs).
 
@@ -38,7 +38,7 @@ The book covers only **finite** MDPs in chapter 3. Finite means that the the **s
 1. For finite MDPs multiple important theoretical results can be stated which will come in handy later on (e.g. the existance of a unique solution of the Bellmann optimality equation). 
 2. The first algorithms that the book introduces, such as *Dynamic Programming* and *Monte Carlo* require to compute and store $|\mathcal{S}|*|\mathcal{A}|$ values, which is only possible if the respective sets are finite.
 
-### *Optimal* navigation of the environment
+## *Optimal* navigation of the environment
 
 The goal of the agent is to choose actions in an optimal way. What does optimality means in this context? A obvious wish is to maximise the sum of all rewards the agent encounters during the state-action-reward cycle. To define this formally we first have to define the terms **policy** and **return of an episode**. 
 
