@@ -100,12 +100,12 @@ This set of equations is called **Bellmann optimality equation**.
 For me it was helpful to think in backup diagrams to understand equations 3.14 and 3.19. I won't explain the reasoning behind these diagrams here, but feel free to consult the book for more information.
 
 <figure>
-  <img src="./rl-chapter-3/BackUP.png" width=200/>
+  <img src="./rl-chapter-3/BackUp.png" width=200/>
   <figcaption>BackUp diagram p.59</figcaption>
 </figure>
 
 <figure>
-  <img src="./rl-chapter-3/BackUP.png" width=200/>
+  <img src="./rl-chapter-3/BackUp.png" width=200/>
   <figcaption>BackUp diagram Fig. 3.4</figcaption>
 </figure>
 
